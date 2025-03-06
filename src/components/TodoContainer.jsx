@@ -47,7 +47,6 @@ const initialLists = [
 
 const TodoContainer = () => {
   const [todos, setTodos] = useState(initialTodos);
-  const [lists, setLists] = useState(initialLists);
 
   const handleChange = (id) => {
     const updatedTodo = todos.find((todo) => todo.id === id);
@@ -77,7 +76,7 @@ const TodoContainer = () => {
         <InputTodo addTodoProps={addTodoItem} />
         <div className="list-container">
           {
-            lists.map(list => {
+            initialLists.map(list => {
               return (
                 <TodosList
                   key={list.id}
