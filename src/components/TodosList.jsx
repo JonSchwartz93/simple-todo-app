@@ -1,18 +1,19 @@
 import React from "react";
 import TodoItem from "./TodoItem";
 
-const TodosList = ({ todos, title, handleChangeProps, deleteTodoProps }) => {
+const TodosList = ({ todos, list, handleChangeProps, deleteTodoProps }) => {
   return (
     <div className="list">
-      <h3>{title}</h3>
-      {todos.map(todo => (
-        <TodoItem
-          key={todo.id}
-          todo={todo}
-          handleChangeProps={handleChangeProps}
-          deleteTodoProps={deleteTodoProps}
-        />
-      ))}
+      <h4>{list.title}</h4>
+      {todos.map((todo) => {
+        return todo.status === list.title &&
+          <TodoItem
+            key={todo.id}
+            todo={todo}
+            handleChangeProps={handleChangeProps}
+            deleteTodoProps={deleteTodoProps}
+          />
+      })}
     </div>
   );
 }

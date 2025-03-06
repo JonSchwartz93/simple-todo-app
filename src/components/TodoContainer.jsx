@@ -47,7 +47,7 @@ const initialLists = [
 
 const TodoContainer = () => {
   const [todos, setTodos] = useState(initialTodos);
-  // const [lists, setLists] = useState(initialLists);
+  const [lists, setLists] = useState(initialLists);
 
   const handleChange = (id) => {
     const updatedTodo = todos.find((todo) => todo.id === id);
@@ -60,12 +60,14 @@ const TodoContainer = () => {
     setTodos(updatedTodos);
   };
 
-  const addTodoItem = (title) => {
+  const addTodoItem = (title, status) => {
     const newTodo = {
       id: Math.random(),
       title: title,
+      status: status,
       completed: false,
     };
+
     setTodos([...todos, newTodo]);
   };
 
@@ -75,12 +77,12 @@ const TodoContainer = () => {
         <InputTodo addTodoProps={addTodoItem} />
         <div className="list-container">
           {
-            initialLists.map(list => {
+            lists.map(list => {
               return (
                 <TodosList
                   key={list.id}
                   todos={todos}
-                  title={list.title}
+                  list={list}
                   handleChangeProps={handleChange}
                   deleteTodoProps={delTodo}
                 />
