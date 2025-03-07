@@ -1,7 +1,5 @@
 ## Jon's JIRA Clone
 
-_Note:_ This app builds off of https://github.com/Ibaslogic/simple-todo-app
-
 ### Live Deployment:
 You can checkout a live version of the project here: https://simple-todo-app-jonschwartz93s-projects.vercel.app/
 
@@ -17,3 +15,5 @@ You can checkout a live version of the project here: https://simple-todo-app-jon
 1. `git clone https://github.com/JonSchwartz93/simple-todo-app.git`
 2. `npm install`
 3. `npm start` --> You should see the app running in your browser at [http://localhost:3000](http://localhost:3000)
+
+_Note:_ This app builds off of https://github.com/Ibaslogic/simple-todo-app
