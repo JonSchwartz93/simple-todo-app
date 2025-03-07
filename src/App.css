@@ -78,3 +78,17 @@ body {
   color: red;
   font-style: italic;
 }
+
+@media screen and (max-width: 768px) {
+  .list-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .list {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

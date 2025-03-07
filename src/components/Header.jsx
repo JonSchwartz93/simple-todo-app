@@ -9,10 +9,10 @@ const Header = () => {
   return (
     <header style={headerStyle}>
       <h1 style={{ fontSize: "25px", marginBottom: "15px" }}>
-        Simple Todo App
+        Jon's JIRA Clone
       </h1>
       <p style={{ fontSize: "19px" }}>
-        Please add to-dos item(s) through the input field
+        Please add to-dos item(s) using the input field + status dropdown below
       </p>
     </header>
   );
