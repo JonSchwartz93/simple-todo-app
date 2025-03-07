@@ -9,7 +9,7 @@ body {
   color: #1f1f1f;
 }
 .container {
-  max-width: 700px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -24,7 +24,8 @@ body {
   border: 1px solid #cecece;
   outline: none;
   font-weight: 400;
-  max-width: 80%;
+  width: 60%;
+  margin-right: 1rem;
 }
 .input-text::placeholder {
   color: #999;
@@ -57,4 +58,23 @@ body {
   cursor: pointer;
   float: right;
   outline: none;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list {
+  width: 30%;
+  margin-top: 1rem;
+}
+
+#todo-status {
+  margin-right: 1rem;
+}
+
+.error-message {
+  color: red;
+  font-style: italic;
 }
