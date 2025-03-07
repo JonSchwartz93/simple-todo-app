@@ -18,7 +18,7 @@ const TodoItem = ({ todo, handleChangeProps, deleteTodoProps }) => {
         onChange={() => handleChangeProps(id)}
       />
       <button onClick={() => deleteTodoProps(id)}>Delete</button>
-      <span style={completed ? completedStyle : null}>{title}</span>
+      <p style={completed ? completedStyle : null}>{title}</p>
     </li>
   );
 }
